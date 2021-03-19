@@ -56,7 +56,7 @@ int HRTFContainer::load_hrir_r(string hrir_r_dir){
     string value = "";
 
     if(!file){
-        cout << "hrir_l file not found" << endl;
+        cout << "hrir_r file not found" << endl;
         return -1;
     }
     else{
@@ -90,7 +90,7 @@ int HRTFContainer::load_ITD(string ITD_dir){
     string value = "";
 
     if(!file){
-        cout << "hrir_l file not found" << endl;
+        cout << "ITD file not found" << endl;
         return -1;
     }
     else{

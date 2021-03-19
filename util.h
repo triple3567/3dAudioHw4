@@ -1,7 +1,20 @@
 #include <stdlib.h>
+#include "AudioFile.h"
 /**
  * Borrowed from https://toto-share.com/2011/11/cc-convolution-source-code/
 **/
+
+static void interpretInput(AudioFile<float> wav, float* left_output, float* right_output){
+	int numSamples = wav.getNumSamplesPerChannel(); 
+    left_output = new float[numSamples];
+    right_output = new float[numSamples];
+    for (int i = 0; i < numSamples; i++)
+    {
+        left_output[i] = wav.samples[0][i];
+        right_output[i] = wav.samples[1][i];
+    }
+	return;
+}
 
 
 static float *conv(float *A, float *B, int lenA, int lenB)

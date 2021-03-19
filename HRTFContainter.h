@@ -7,9 +7,9 @@ using namespace std;
 class HRTFContainer{
     public:
 
-    const string HRIR_L_DIR = "hrir_l.txt";
-    const string HRIR_R_DIR = "hrir_r.txt";
-    const string ITD_DIR = "ITD.txt";
+    const string HRIR_L_DIR = "./data/hrir_l.txt";
+    const string HRIR_R_DIR = "./data/hrir_r.txt";
+    const string ITD_DIR = "./data/ITD.txt";
 
     HRTFContainer();
 
