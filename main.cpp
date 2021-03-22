@@ -20,11 +20,11 @@ int main(){
     float* right_processed;
     left_processed = new float[numSamples+199];
     right_processed = new float[numSamples+199];
-
     HRTFContainer hrtf = HRTFContainer();
     left_processed = conv(wav_array_left, hrtf.get_hrir_l(0,9), numSamples, 200);
     right_processed = conv(wav_array_right, hrtf.get_hrir_r(0,9), numSamples, 200);
     
+    //generate output wav file
     AudioFile<float> processed = AudioFile<float>();
     processed.setNumChannels(2);
     processed.setNumSamplesPerChannel(numSamples+199);
