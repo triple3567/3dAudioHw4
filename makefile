@@ -1,5 +1,5 @@
 all: main.cpp
-	g++ -o main.o main.cpp HRTFContainer.cpp
+	g++ -o main.exe main.cpp HRTFContainer.cpp
 
-clean: main.o
-	rm main.o
+clean: main.exe
+	rm main.exe
