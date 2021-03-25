@@ -71,7 +71,5 @@ int main(){
     processed.save("final.wav");
     processed.printSummary();
 
-    
-
     return 0;
 }
